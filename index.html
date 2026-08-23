@@ -1,0 +1,362 @@
+
+<!DOCTYPE html>
+<!-- ============================================================
+  ATELIER SOLITAIRE — Haute Couture Evening Gowns, Los Angeles
+  Single-page scroll site. Pure HTML/CSS/JS + GSAP + Lenis.
+  To replace images: search this file for "REPLACE IMAGE".
+  To configure the form: search for "FORMSPREE".
+============================================================ -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atelier Solitaire — Haute Couture Evening Gowns, Los Angeles</title>
+  <meta name="description" content="Atelier Solitaire is a Los Angeles haute couture atelier creating one-of-a-kind evening gowns for red carpets, galas, and weddings. By appointment only." />
+
+  <!-- Google Fonts: Playfair Display (headings) / Lora (literary body) / Inter (UI) / Great Vibes (signature) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Lora:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ==================== PAGE LOADER VEIL ==================== -->
+  <div class="veil" aria-hidden="true"></div>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <header class="site-nav" id="siteNav">
+    <a class="brand" href="#top" data-scroll>Atelier&nbsp;Solitaire</a>
+    <nav class="nav-links" aria-label="Primary">
+      <!-- Double-layer links: the second line slides up on hover -->
+      <a class="nav-link" href="#about" data-scroll>
+        <span class="nav-link-stack"><span>About</span><span aria-hidden="true">About</span></span>
+      </a>
+      <a class="nav-link" href="#collection" data-scroll>
+        <span class="nav-link-stack"><span>Collection</span><span aria-hidden="true">Collection</span></span>
+      </a>
+      <a class="nav-link" href="#process" data-scroll>
+        <span class="nav-link-stack"><span>Process</span><span aria-hidden="true">Process</span></span>
+      </a>
+      <a class="nav-link" href="#team" data-scroll>
+        <span class="nav-link-stack"><span>Team</span><span aria-hidden="true">Team</span></span>
+      </a>
+      <a class="nav-link" href="#contact" data-scroll>
+        <span class="nav-link-stack"><span>Contact</span><span aria-hidden="true">Contact</span></span>
+      </a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ==================== 1. HERO ==================== -->
+    <section class="hero" id="hero">
+      <div class="hero-inner">
+        <p class="hero-eyebrow reveal-line"><span>Atelier Solitaire</span></p>
+        <h1 class="hero-title">
+          <span class="reveal-line"><span>Haute</span></span>
+          <span class="reveal-line"><span>Couture</span></span>
+        </h1>
+        <p class="hero-sub reveal-line"><span>Los&nbsp;Angeles</span></p>
+      </div>
+
+      <!-- Scroll indicator: fine line + dot, slow float -->
+      <div class="scroll-cue" aria-hidden="true">
+        <span class="scroll-cue-line"></span>
+        <span class="scroll-cue-dot"></span>
+      </div>
+    </section>
+
+    <!-- ==================== 2. ABOUT ==================== -->
+    <section class="about section-pad" id="about">
+      <div class="about-grid">
+        <figure class="about-figure">
+          <!-- REPLACE IMAGE: gown detail shot, 800x1000 (4:5 portrait) -->
+          <img src="images/atelier-detail.jpg"
+               alt="Hand-finished embroidery on silk tulle, detail of a couture gown"
+               width="800" height="1000" loading="lazy" />
+        </figure>
+
+        <div class="about-copy">
+          <p class="section-label">The Atelier</p>
+          <h2 class="section-title reveal-line"><span>Where Fabric<br />Meets Sculpture</span></h2>
+
+          <div class="about-text">
+            <p>In a quiet studio above Melrose Avenue, far from the noise of seasons and trends, Atelier Solitaire practices a slower discipline, the making of a single gown for a single woman, cut to her body and to her moment.</p>
+            <p>Every commission begins in muslin and ends in silk. Patterns are drafted by hand, draped on the stand, and corrected at the mirror, a conversation between fabric and form that may last two hundred hours before a single seam is closed.</p>
+            <p>We are a Los Angeles house, and we make dresses for Los Angeles light, for the way silk moves at dusk in the Hills, for the flash of a camera, for rooms where a woman is seen before she is heard.</p>
+            <p>We accept a small number of commissions each year. Each is a collaboration; each, in the end, belongs to one evening and one woman alone.</p>
+          </div>
+
+          <p class="signature">Romilly Law</p>
+
+          <p class="est">Founder &amp; Creative Director. 2016, Los Angeles</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 3. COLLECTION ==================== -->
+    <section class="collection section-pad" id="collection">
+      <header class="collection-head">
+        <p class="section-label">Selected Works</p>
+        <h2 class="section-title reveal-line"><span>The Collections</span></h2>
+        <span class="rule" aria-hidden="true"></span>
+      </header>
+
+      <!-- REPLACE IMAGE: six works, 3:4 portrait (900x1200 used here) -->
+      <div class="collection-grid">
+        <figure class="work">
+          <div class="work-media">
+            <img src="images/nocturne.jpg" alt="Nocturne — black silk velvet evening gown" width="900" height="1200" loading="lazy" />
+          </div>
+          <figcaption class="work-caption"><span class="work-name">Nocturne</span><span class="work-year">2025</span></figcaption>
+        </figure>
+        <figure class="work">
+          <div class="work-media">
+            <img src="images/vermeil.jpg" alt="Vermeil — champagne silk charmeuse gown" width="900" height="1200" loading="lazy" />
+          </div>
+          <figcaption class="work-caption"><span class="work-name">Vermeil</span><span class="work-year">2024</span></figcaption>
+        </figure>
+        <figure class="work">
+          <div class="work-media">
+            <img src="images/la-nuit-blanche.jpg" alt="La Nuit Blanche — ivory silk organza gown" width="900" height="1200" loading="lazy" />
+          </div>
+          <figcaption class="work-caption"><span class="work-name">La Nuit Blanche</span><span class="work-year">2024</span></figcaption>
+        </figure>
+        <figure class="work">
+          <div class="work-media">
+            <img src="images/sirene.jpg" alt="Sirène — draped silk crepe column gown" width="900" height="1200" loading="lazy" />
+          </div>
+          <figcaption class="work-caption"><span class="work-name">Sirène</span><span class="work-year">2023</span></figcaption>
+        </figure>
+        <figure class="work">
+          <div class="work-media">
+            <img src="images/gilded-hour.jpg" alt="Gilded Hour — gold-thread embroidered tulle gown" width="900" height="1200" loading="lazy" />
+          </div>
+          <figcaption class="work-caption"><span class="work-name">Gilded Hour</span><span class="work-year">2023</span></figcaption>
+        </figure>
+        <figure class="work">
+          <div class="work-media">
+            <img src="images/premiere.jpg" alt="Première — sculptural satin ball gown" width="900" height="1200" loading="lazy" />
+          </div>
+          <figcaption class="work-caption"><span class="work-name">Première</span><span class="work-year">2022</span></figcaption>
+        </figure>
+      </div>
+
+      <p class="collection-more">
+        <a class="text-link" href="#contact" data-scroll>View Lookbook <span class="arrow" aria-hidden="true">&rarr;</span></a>
+      </p>
+    </section>
+
+    <!-- ==================== 4. PROCESS ==================== -->
+    <section class="process section-pad" id="process">
+      <header class="process-head">
+        <p class="section-label">From Muslin to Mirror</p>
+        <h2 class="section-title reveal-line"><span>The Art of Creation</span></h2>
+      </header>
+
+      <div class="steps">
+        <span class="steps-line" aria-hidden="true"></span>
+
+        <div class="step">
+          <p class="step-number">01</p>
+          <h3 class="step-title">Consultation</h3>
+          <p class="step-text">A private conversation in the atelier, or over tea. We speak of the occasion, the woman, and the life the dress must live.</p>
+        </div>
+        <div class="step">
+          <p class="step-number">02</p>
+          <h3 class="step-title">Design</h3>
+          <p class="step-text">Hand-drawn sketches and a curated table of silks, tulles, and embroideries from the mills of Lyon and Como.</p>
+        </div>
+        <div class="step">
+          <p class="step-number">03</p>
+          <h3 class="step-title">Fittings</h3>
+          <p class="step-text">Three private fittings across eight to twelve weeks, as the gown is sculpted patiently to your movement.</p>
+        </div>
+        <div class="step">
+          <p class="step-number">04</p>
+          <h3 class="step-title">Delivery</h3>
+          <p class="step-text">The final pressing, the final mirror. Your gown leaves the atelier in a handmade box, ready for its evening.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 5. TESTIMONIAL ==================== -->
+    <section class="testimonial section-pad" id="testimonial">
+      <div class="quote-mark" aria-hidden="true">
+        <svg viewBox="0 0 48 36" width="48" height="36" fill="none">
+          <path d="M0 36V21.6C0 9.9 6.9 2.4 18 0l2.4 5.4C13.8 7.8 10.2 12 9.9 17.4H18V36H0Zm30 0V21.6C30 9.9 36.9 2.4 48 0l-2.4 5.4c-1.2.3-2.4 1-3.6 1.8-2.4 1.8-4.2 4.5-4.5 10.2H48V36H30Z" fill="currentColor" transform="scale(0.9)"/>
+        </svg>
+      </div>
+
+      <div class="quotes">
+        <blockquote class="quote is-active">
+          <p class="quote-text">The gown did not enter the room before me — it arrived with me, as if we had been made together. Which, of course, we had.</p>
+          <footer class="quote-cite">A. Laurent <span>— Oscar Night, 2024</span></footer>
+        </blockquote>
+        <blockquote class="quote">
+          <p class="quote-text">Three fittings, two hundred hours, one dress. I have never felt so precisely understood by a garment.</p>
+          <footer class="quote-cite">M. Chen <span>— Met Gala, 2023</span></footer>
+        </blockquote>
+        <blockquote class="quote">
+          <p class="quote-text">She listened longer than she measured. The dress knew things about me I had not said aloud.</p>
+          <footer class="quote-cite">R. Duval <span>— Wedding at San Ysidro Ranch, 2025</span></footer>
+        </blockquote>
+      </div>
+
+      <div class="quote-nav">
+        <button class="quote-arrow" id="quotePrev" aria-label="Previous testimonial">
+          <svg viewBox="0 0 32 12" width="40" height="14" fill="none"><path d="M8 1 2 6l6 5M2 6h30" stroke="currentColor" stroke-width="1"/></svg>
+        </button>
+        <button class="quote-arrow" id="quoteNext" aria-label="Next testimonial">
+          <svg viewBox="0 0 32 12" width="40" height="14" fill="none"><path d="M24 1l6 5-6 5M30 6H0" stroke="currentColor" stroke-width="1"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- ==================== 6. TEAM ==================== -->
+    <section class="team section-pad" id="team">
+      <header class="team-head">
+        <p class="section-label">The House</p>
+        <h2 class="section-title reveal-line"><span>The Hands Behind<br />the House</span></h2>
+        <span class="rule" aria-hidden="true"></span>
+        <p class="team-lede">A gown is never made by one person. It passes through a few pairs<br class="br-desk" /> of very patient hands — each of them below.</p>
+      </header>
+
+      <!-- Founder -->
+      <div class="founder">
+        <div class="founder-inner">
+          <figure class="founder-figure">
+            <!-- REPLACE IMAGE: founder portrait, 800x1000 (4:5) -->
+            <img src="images/team-anneliese.jpg"
+                 alt="Romilly Law, founder of Atelier Solitaire, in the fitting room"
+                 width="800" height="1000" loading="lazy" />
+          </figure>
+          <div class="founder-copy">
+            <p class="section-label">Founder &amp; Chief Executive</p>
+            <h3 class="founder-name">Romilly Law</h3>
+            <span class="rule rule-left" aria-hidden="true"></span>
+            <p class="founder-note">Romilly aesthetic foundation stems from the rigorous training she received at Parsons School of Design, where she was immersed in womenswear tailoring, visual styling, and a sophisticated commercial perspective. In 2016, she returned to Los Angeles and co-founded this unconventional creative studio with her close friend Scarlett Martin. Her design narratives and business acumen have resonated with the evolving industry, garnering her numerous accolades and awards. As a multi-faceted creator, irector, fashion strategist, and industry pioneer, she is redefining the contemporary fashion landscape with her unique strategic vision.</p>
+            <p class="signature">Romilly Law</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- REPLACE IMAGE: four portraits, 900x1200 (3:4) -->
+      <div class="team-grid">
+        <figure class="member">
+          <div class="member-media">
+            <img src="images/team-seraphine.jpg" alt="Portrait of Seraphine Lac" width="900" height="1200" loading="lazy" />
+          </div>
+          <figcaption class="member-caption">
+            <span class="member-name">Seraphine Lac</span>
+            <span class="member-rule" aria-hidden="true"></span>
+            <span class="member-role">Creative Director</span>
+          </figcaption>
+        </figure>
+
+        <figure class="member">
+          <div class="member-media">
+            <img src="images/team-isolde.jpg" alt="Portrait of Isolde Mireille" width="900" height="1200" loading="lazy" />
+          </div>
+          <figcaption class="member-caption">
+            <span class="member-name">Isolde Mireille</span>
+            <span class="member-rule" aria-hidden="true"></span>
+            <span class="member-role">Fashion Designer</span>
+          </figcaption>
+        </figure>
+
+        <figure class="member">
+          <div class="member-media">
+            <img src="images/team-talassa.jpg" alt="Portrait of Talassa Wynne" width="900" height="1200" loading="lazy" />
+          </div>
+          <figcaption class="member-caption">
+            <span class="member-name">Talassa Wynne</span>
+            <span class="member-rule" aria-hidden="true"></span>
+            <span class="member-role">Patternmaker</span>
+          </figcaption>
+        </figure>
+
+        <figure class="member">
+          <div class="member-media">
+            <img src="images/team-scarlett.jpg" alt="Portrait of Scarlett Martin" width="900" height="1200" loading="lazy" />
+          </div>
+          <figcaption class="member-caption">
+            <span class="member-name">Scarlett Martin</span>
+            <span class="member-rule" aria-hidden="true"></span>
+            <span class="member-role">Partner</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ==================== 7. CONTACT ==================== -->
+    <section class="contact section-pad" id="contact">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="section-label">By Appointment Only</p>
+          <h2 class="section-title reveal-line"><span>Begin Your<br />Journey</span></h2>
+
+          <address class="contact-details">
+            <p>Atelier Solitaire<br />8600 Melrose Avenue<br />West Hollywood, CA 90069</p>
+            <p><a class="text-link" href="mailto:fs@ateliersolitaire.com">fs
+@ateliersolitaire.com</a></p>
+            <!-- REPLACE PHONE: put your real number in both href and text -->
+            <p><a class="text-link" href="tel:+12135831509">+1 (213) 583-1509</a></p>
+          </address>
+        </div>
+
+        <!-- FORMSPREE: replace the action below with your own Formspree endpoint,
+             e.g. action="https://formspree.io/f/abcdwxyz". Until then the form
+             demonstrates the success state without sending. -->
+        <form class="contact-form" id="appointmentForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+          <div class="field">
+            <label for="f-name">Name</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required />
+          </div>
+          <div class="field">
+            <label for="f-email">Email</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required />
+          </div>
+          <div class="field">
+            <label for="f-event">Occasion</label>
+            <select id="f-event" name="occasion" required>
+              <option value="" disabled selected>Select an occasion</option>
+              <option value="gala">Gala</option>
+              <option value="wedding">Wedding</option>
+              <option value="red-carpet">Red Carpet</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-date">Ideal Date</label>
+            <input id="f-date" name="date" type="date" />
+          </div>
+          <div class="field field-full">
+            <label for="f-message">A Few Words</label>
+            <textarea id="f-message" name="message" rows="3"></textarea>
+          </div>
+
+          <button class="submit-btn" type="submit">Request an Appointment</button>
+          <p class="form-success" id="formSuccess" role="status">We will be in touch shortly.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== 8. FOOTER ==================== -->
+  <footer class="site-footer">
+    <p class="footer-copy">&copy; <span id="footerYear">2026</span> Atelier Solitaire. All rights reserved.</p>
+    <button class="to-top" id="toTop" aria-label="Back to top">
+      <svg viewBox="0 0 12 32" width="14" height="36" fill="none"><path d="M6 30V2M1 7l5-5 5 5" stroke="currentColor" stroke-width="1"/></svg>
+    </button>
+  </footer>
+
+  <!-- Libraries: GSAP + ScrollTrigger (scroll animation), Lenis (smooth scroll) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
